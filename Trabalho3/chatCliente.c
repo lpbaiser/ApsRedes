@@ -93,7 +93,7 @@ main(int argc, char *argv[]) {
     pthread_create(env, NULL, enviaMensagem, (void*) sd);
 
     recebeMensagem((void*) sd);
-
+    
     //fecha a conexão
     close(*sd);
 }
